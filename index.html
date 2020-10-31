@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&E</title>
+
+  <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/home.min.css">
+</head>
+<body class="container">
+  <!-- ส่วนหัว -->
+  <header>
+    <div class="header">
+      <div class="logo"><img src="./img/logo/logo.png" alt=""></div>
+      <nav>
+        <ul class="head-menu">
+          <li><a href="">home</a></li>
+          <li><a href="">product</a></li>
+          <li><a href="">about us</a></li>
+          <li><a href="">contact</a></li>
+          <li><a href="">download</a></li>
+          <li><i class="fas fa-search" onclick="searchbox()"></i></li>
+          <!-- ไอค่อนสำหรับปิดเมนู -->
+          <li class="icon-close"><i class="fas fa-times" onclick="close_headMenu()"></i></li>
+        </ul>
+      </nav>
+      <div class="burger"><i class="fas fa-bars" onclick="head_menu()"></i></div>
+    </div>
+    <div class="search-box">
+      <div class="input-box">
+        <input type="text" id="inputSearch" class="form-component">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- ส่วนของสไลด์ -->
+  <section>
+    <div class="slide">
+      <div class="main-carousel">
+        <figure class="carousel-cell"><img src="./img/slide.jpg" alt=""></figure>
+        <figure class="carousel-cell"><img src="./img/slide.jpg" alt=""></figure>
+        <figure class="carousel-cell"><img src="./img/slide.jpg" alt=""></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ส่วนหลัก -->
+  <main>
+    <div class="main-content">
+      <div class="aside">
+        <div class="icon"><i class="fas fa-align-left" onclick="aside_mobile()"></i></div>
+        <div class="aside-menu">
+          <div class="title">category</div>
+          <ul class="menu">
+            <li class="active"><a href="">สายไฟ</a></li>
+            <li><a href="">หม้อแปลง</a></li>
+            <li><a href="">มอเตอร์</a></li>
+            <li><a href="">สวิตซ์</a></li>
+            <li><a href="">ปลั๊ก</a></li>
+            <li><a href="">ตู้คอนซูเมอร์ ตู้โหลด</a></li>
+            <li><a href="">เบรกเกอร์ ออโตเมติก</a></li>
+            <li><a href="">ท่อร้อยสาย</a></li>
+            <li><a href="">หางปลา</a></li>
+            <li><a href="">ฟิวส์</a></li>
+            <li><a href="">ไฟประดับ</a></li>
+
+            <!-- ไอค่อนสำหรับปิดเมนู -->
+            <li class="icon-close"><i class="fas fa-angle-double-left" onclick="closeAside_mobile()"></i></li>
+          </ul>
+          <figure class="qrcode"><img src="./img/qrcode.jpg" alt=""></figure>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <span>สินค้าแนะนำ</span>
+          <div class="tag">
+            <span>Tags</span>
+            <i class="fas fa-tags"></i>
+          </div>
+        </div>
+
+        <div class="grid-box">
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test1.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 1,800</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test2.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 22,000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test3.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test4.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="new">
+                  <span>สินค้าใหม่</span>
+                </div>
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test1.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 1,800</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test2.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 22,000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test3.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test4.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="new">
+                  <span>สินค้าใหม่</span>
+                </div>
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test1.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 1,800</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test2.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 22,000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test3.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test4.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="new">
+                  <span>สินค้าใหม่</span>
+                </div>
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test1.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 1,800</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test2.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span>฿ 22,000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test3.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="box">
+              <figure><img src="./img/test4.jpg" alt=""></figure>
+              <div class="detail">
+                <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                <div class="price">
+                  <span class="discount">฿ 1,800</span>
+                  <span>฿ 1,000</span>
+                </div>
+              </div>
+              <!-- เมื่อมีการลดราคา จะมี element นี้ -->
+              <div class="tag-zone">
+                <div class="new">
+                  <span>สินค้าใหม่</span>
+                </div>
+                <div class="sale">
+                  <span>ลดราคา</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="filter-tag">
+          <div class="box-filter">
+            <div class="head">
+              <i class="fas fa-times"></i>
+              <span>TAGS</span>
+              <span class="reset">RESET</span>
+            </div>
+            <div class="body-tag">
+              <div class="select-tag">
+                <h4>Include Tags</h4>
+                <label>Find product that has all selected tags below</label>
+                <ul class="tag">
+                  <li><button class="active">สินค้าใหม่</button></li>
+                  <li><button class="active">ลดราคา</button></li>
+                  <li><button>หน้ากาก</button></li>
+                  <li><button>เครื่องมือช่าง</button></li>
+                  <li><button>อุปกรณ์ป้องกันร่างกาย</button></li>
+                  <li><button>อุปกรณ์ส่องสว่าง</button></li>
+                </ul>
+              </div>
+              <div class="footer">
+                <span>ยกเลิก</span>
+                <span class="apply">ใช้งาน</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>
