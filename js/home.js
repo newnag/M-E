@@ -37,3 +37,31 @@ const searchbox = ()=>{
   document.querySelector('header .search-box').classList.toggle('show')
   document.querySelector('#inputSearch').value = ""
 }
+
+//-------------------------------------------
+// tag filter
+//-------------------------------------------
+//open-close
+const open_tag = ()=>{
+  document.querySelector('.filter-tag').classList.add('show')
+}
+const close_filter = ()=>{
+  document.querySelector('.filter-tag').classList.remove('show')
+}
+
+// reset tag
+const reset_tag = ()=>{
+  const button = document.querySelectorAll('.select-tag .tag li button')
+  button.forEach(bt=>{
+    bt.classList.remove('active')
+  })
+}
+
+// click tag
+const select_tag = (that)=>{
+  that.classList.toggle('active')
+}
+
+//-------------------------------------------
+// slide footer
+//-------------------------------------------

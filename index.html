@@ -79,7 +79,7 @@
       <div class="content">
         <div class="title">
           <span>สินค้าแนะนำ</span>
-          <div class="tag">
+          <div class="tag" onclick="open_tag()">
             <span>Tags</span>
             <i class="fas fa-tags"></i>
           </div>
@@ -350,25 +350,25 @@
         <div class="filter-tag">
           <div class="box-filter">
             <div class="head">
-              <i class="fas fa-times"></i>
+              <i class="fas fa-times" onclick="close_filter()"></i>
               <span>TAGS</span>
-              <span class="reset">RESET</span>
+              <span class="reset" onclick="reset_tag()">RESET</span>
             </div>
             <div class="body-tag">
               <div class="select-tag">
                 <h4>Include Tags</h4>
                 <label>Find product that has all selected tags below</label>
                 <ul class="tag">
-                  <li><button class="active">สินค้าใหม่</button></li>
-                  <li><button class="active">ลดราคา</button></li>
-                  <li><button>หน้ากาก</button></li>
-                  <li><button>เครื่องมือช่าง</button></li>
-                  <li><button>อุปกรณ์ป้องกันร่างกาย</button></li>
-                  <li><button>อุปกรณ์ส่องสว่าง</button></li>
+                  <li><button class="active" onclick="select_tag(this)">สินค้าใหม่</button></li>
+                  <li><button class="active" onclick="select_tag(this)">ลดราคา</button></li>
+                  <li><button onclick="select_tag(this)">หน้ากาก</button></li>
+                  <li><button onclick="select_tag(this)">เครื่องมือช่าง</button></li>
+                  <li><button onclick="select_tag(this)">อุปกรณ์ป้องกันร่างกาย</button></li>
+                  <li><button onclick="select_tag(this)">อุปกรณ์ส่องสว่าง</button></li>
                 </ul>
               </div>
               <div class="footer">
-                <span>ยกเลิก</span>
+                <span onclick="close_filter()">ยกเลิก</span>
                 <span class="apply">ใช้งาน</span>
               </div>
             </div>
@@ -377,6 +377,61 @@
       </div>
     </div>
   </main>
+
+  <footer>
+    <div class="footer">
+      <div class="brand">
+        <div class="title">ยี่ห้อผลิตภัณฑ์ต่างๆ</div>
+        <div class="list-brand">
+          <ul class="list-brand-item">
+            <li class=""><img src="./img/brand/3M-02.png" alt=""></li>
+            <li class=""><img src="./img/brand/ABB-02.png" alt=""></li>
+            <li class=""><img src="./img/brand/hitachi-02.png" alt=""></li>
+            <li class=""><img src="./img/brand/idec-02.png" alt=""></li>
+            <li class=""><img src="./img/brand/mitsubishi-02.png" alt=""></li>
+            <li class=""><img src="./img/brand/panasonic-02.png" alt=""></li>
+            <li class=""><img src="./img/brand/salzer-02.png" alt=""></li>
+          </ul>
+          <div class="prev"><i class="fas fa-angle-left"></i></div>
+          <div class="next"><i class="fas fa-angle-right"></i></div>
+        </div>
+        <img src="./img/brand.jpg" alt="" class="bg-brand">
+      </div>
+
+      <div class="content-footer">
+        <div class="contact">
+          <div class="address">
+            <p>500 terry francois street San Francisco, CA 94158</p> 
+          </div>
+          <div class="mail-tel">
+            <p>Mail: info@mysite.com</p>
+            <p>Tel: 123-456-7890</p>
+          </div>
+        </div>
+
+        <div class="logo-social">
+          <div class="logo"><img src="./img/logo/logo.png" alt=""></div>
+          <div class="social">
+            <figure><i class="fab fa-facebook-f"></i></figure>
+            <figure><i class="fab fa-line"></i></figure>
+            <figure><i class="fab fa-twitter"></i></figure>
+          </div>
+        </div>
+
+        <div class="send-email">
+          <label>JOIN US!</label>
+          <div class="input-box">
+            <input type="email" class="form-component" placeholder="Email">
+            <button class="form-component button-footer">Send</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy;2020 by <a href="wynnsoft-solution.com">wynnsoft-solution</a></p>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="./js/home.js"></script>

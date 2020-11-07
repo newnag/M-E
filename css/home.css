@@ -32,6 +32,7 @@
 }
 
 .main-content .content .filter-tag {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -145,5 +146,9 @@
 
 .main-content .content .filter-tag .box-filter .body-tag .footer .apply {
   color: #FF7700;
+}
+
+.main-content .content .filter-tag.show {
+  display: block;
 }
 /*# sourceMappingURL=home.css.map */
