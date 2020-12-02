@@ -47,6 +47,7 @@
       width: 100%;
       height: 100%;
       background-color: #ffffffe8;
+      z-index: 10;
 
       .box-filter{
         position: absolute;
@@ -55,8 +56,12 @@
         transform: translate(-50%,-50%);
         background-color: #424242;
         border-radius: 10px;
-        width: 40%;
+        width: 90%;
         padding: 1em;
+
+        @media screen and (min-width:$laptop){
+          width: 40%;
+        }
   
         .head{
           display: flex;

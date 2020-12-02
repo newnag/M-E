@@ -1,0 +1,36 @@
+@import 'variable';
+
+.main-content.about{
+  grid-template-columns: 100%;
+
+  .content{
+    h1{
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    figure{
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    .ck{
+      text-align: center;
+      padding: 0 10em;
+      margin-bottom: 3em;
+
+      p{
+        font-size: .9em;
+      }
+    }
+
+    .social{
+      text-align: center;
+      margin-bottom: 3em;
+
+      a{
+        margin: 0 1em;
+      }
+    }
+  }
+}

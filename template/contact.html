@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&E</title>
+
+  <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="stylesheet" href="/css/contact.min.css">
+</head>
+<body>
+  <div class="body container">
+    <!-- ส่วนหัว -->
+    <header>
+      <div class="header">
+        <div class="logo"><a href=""><img src="/img/logo/logo.png" alt=""></a></div>
+        <nav>
+          <ul class="head-menu">
+            <li><a href="" class="active">home</a></li>
+            <li><a href="">product</a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">download</a></li>
+            <li><i class="fas fa-search" onclick="searchbox()"></i></li>
+            <!-- ไอค่อนสำหรับปิดเมนู -->
+            <li class="icon-close"><i class="fas fa-times" onclick="close_headMenu()"></i></li>
+          </ul>
+        </nav>
+        <div class="burger"><i class="fas fa-bars" onclick="head_menu()"></i></div>
+      </div>
+      <div class="search-box">
+        <div class="input-box">
+          <input type="text" id="inputSearch" class="form-component">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- ส่วนของสไลด์ -->
+    <section>
+      <div class="swiper-container home-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="blog-txt">
+              <h2>New Arrival</h2>
+              <h2>Electric Cable</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maiores magni neque, 
+                eligendi eum delectus praesentium aspernatur perferendis ipsam facere quidem nobis doloremque rem quam deserunt repudiandae possimus, 
+                incidunt, 
+                obcaecati provident?
+              </p>
+              <div class="button"><button class="form-component">Shop Now</button></div>
+              <div class="social">
+                <div class="face"><i class="fab fa-facebook-f"></i></div>
+                <div class="line"><i class="fab fa-line"></i></div>
+                <div class="twitter"><i class="fab fa-twitter"></i></div>
+              </div>
+            </div>
+            <img src="/img/slide.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <div class="blog-txt">
+              <h2>New Arrival</h2>
+              <h2>Electric Wire Gas</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maiores magni neque, 
+                eligendi eum delectus praesentium aspernatur perferendis ipsam facere quidem nobis doloremque rem quam deserunt repudiandae possimus, 
+                incidunt, 
+                obcaecati provident?
+              </p>
+              <div class="button"><button class="form-component">Shop Now</button></div>
+              <div class="social">
+                <div class="face"><i class="fab fa-facebook-f"></i></div>
+                <div class="line"><i class="fab fa-line"></i></div>
+                <div class="twitter"><i class="fab fa-twitter"></i></div>
+              </div>
+            </div>
+            <img src="/img/slide.jpg" alt="">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <!-- ส่วนหลัก -->
+    <main>
+      <div class="main-content contact">
+        <div class="content">
+          <div class="title">
+            <span>Contact</span>
+          </div>
+
+          <h1>ติดต่อเรา</h1>
+
+          <div class="form">
+            <div class="input-box">
+              <label for="">Name</label>
+              <input type="text" class="form-component">
+            </div>
+
+            <div class="input-box">
+            <label for="">Email</label>
+            <input type="email" class="form-component">
+          </div>
+
+          <div class="input-box">
+            <label for="">Subject</label>
+            <input type="text" class="form-component">
+          </div>
+
+          <div class="input-box">
+            <label for="">Message</label>
+            <textarea name="" id="" cols="30" rows="6" class="form-component"></textarea>
+          </div>
+
+          <div class="button"><button class="form-component button">Submit</button></div>
+          </div>
+
+          <p class="or">OR</p>
+
+          <div class="social">
+            <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href=""><i class="fab fa-line"></i> Line</a>
+            <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+          </div>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278895.03661354026!2d100.7677452800407!3d13.33157883569679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c3338735d09%3A0x18f32de1ab8f42e0!2sPoseidon%20Entertainment%20Complex!5e0!3m2!1sth!2sth!4v1606897663038!5m2!1sth!2sth" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="brand">
+          <div class="title">ยี่ห้อผลิตภัณฑ์ต่างๆ</div>
+          <div class="list-brand">
+            <ul class="list-brand-item">
+              <li class=""><img src="/img/brand/3M-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/ABB-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/hitachi-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/idec-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/mitsubishi-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/panasonic-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/salzer-02.png" alt=""></li>
+            </ul>
+            <div class="prev"><i class="fas fa-angle-left"></i></div>
+            <div class="next"><i class="fas fa-angle-right"></i></div>
+          </div>
+          <img src="/img/brand.jpg" alt="" class="bg-brand">
+        </div>
+
+        <div class="content-footer">
+          <div class="contact">
+            <div class="address">
+              <p>500 terry francois street San Francisco, CA 94158</p> 
+            </div>
+            <div class="mail-tel">
+              <p>Mail: info@mysite.com</p>
+              <p>Tel: 123-456-7890</p>
+            </div>
+          </div>
+
+          <div class="logo-social">
+            <div class="logo"><img src="/img/logo/logo.png" alt=""></div>
+            <div class="social">
+              <figure><i class="fab fa-facebook-f"></i></figure>
+              <figure><i class="fab fa-line"></i></figure>
+              <figure><i class="fab fa-twitter"></i></figure>
+            </div>
+          </div>
+
+          <div class="send-email">
+            <label>JOIN US!</label>
+            <div class="input-box">
+              <input type="email" class="form-component" placeholder="Email">
+              <button class="form-component button-footer">Send</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy;2020 by <a href="wynnsoft-solution.com">wynnsoft-solution</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="bg-page">
+    <div class="bg1">
+      <img src="/img/BG.png" alt="">
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

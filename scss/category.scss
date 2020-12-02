@@ -1,0 +1,250 @@
+@import 'variable';
+
+.category{
+
+  .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: .5em;
+    margin: 1em 0;
+
+    @media screen and (min-width:$tablet){
+      grid-template-columns: repeat(2,1fr);
+      grid-row-gap: 1em;
+      grid-column-gap: 1em;
+    }
+
+    .box{
+      position: relative;
+      height: 150px;
+      border-radius: 5px;
+
+      @media screen and (min-width:$tablet){
+        -webkit-box-shadow: 0px 9px 14px 0px rgba(196,196,196,1);
+        -moz-box-shadow: 0px 9px 14px 0px rgba(196,196,196,1);
+        box-shadow: 0px 9px 14px 0px rgba(196,196,196,1);
+      }
+
+      .detail{
+        position: absolute;
+        top: 0;
+        right: 15px;
+        width: 30%;
+        height: 100%;
+        z-index: 1;
+        padding: 1em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name{
+          h2{
+            font-weight: 600;
+            font-size: 1.3em;
+          }
+        }
+
+        .button{
+          button{
+            background-color: $orange;
+            color: $white;
+            width: 60%;
+            border: unset;
+          }
+        }
+      }
+
+      .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.sub-category,.brand{
+  .grid-brand{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 5%;
+    margin: 1em 0;
+
+    .box{
+      border: 1px solid $gray;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      height: 40px;
+
+      img{
+        max-height: 22px;
+      }
+    }
+  } 
+
+  .title-sub{
+    display: flex;
+
+    .title{
+      width: 80%;
+    }
+    .button{
+      width: 20%;
+      text-align: center;
+
+      button{
+        width: 90%;
+        background: $orange;
+        color: $white;
+        border: unset;
+      }
+    }
+  }
+
+  .grid-box{
+
+    .box{
+      position: relative;
+
+      .brand{
+        position: absolute;
+        top: 3px;
+        right: 0;
+
+        img{
+          width: 70px;
+          height: 15px;
+        }
+      }
+
+      .tag{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .new{
+          background: $yellow;
+          padding: 2px;
+          text-align: center;
+          margin-bottom: 3px;
+
+          span{
+            font-size: .8em;
+            color: $black;
+          }
+        }
+        .discount{
+          background: $orange;
+          padding: 2px;
+          text-align: center;
+          margin-bottom: 3px;
+
+          span{
+            font-size: .8em;
+            color: $white;
+          }
+        }
+      }
+
+      .picture{
+        padding-top: 2em;
+      }
+
+      .detail{
+        .name{
+          p{
+            max-height: 3.2em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
+        }
+
+        .price{
+          span{
+            color: $orange;
+          }
+
+          &.discount{
+            span:first-child{
+              color: $gray;
+              text-decoration: line-through;
+              font-size: .7em;
+            }
+            span:last-child{
+              color: $orange;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.brand{
+  .head-bg{
+    margin-bottom: .5em;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.main-content.product{
+  grid-template-columns: 100%;
+}
+.product{
+  .grid-product{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 1em;
+    margin: 1em 0;
+
+    @media screen and (min-width:$tablet){
+      grid-template-columns: repeat(2,1fr);
+      grid-column-gap: 2%;
+    }
+    @media screen and (min-width:$ipadpro){
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 2%;
+    }
+
+    .list{
+      label{
+        margin-bottom: .5em;
+      }
+      ul{
+        li{
+          display: flex;
+          align-items: center;
+          margin: .25em 0;
+          height: 1.6em;
+          overflow: hidden;
+          
+
+          .circle{
+            width: 6px;
+            height: 6px;
+            border-radius: 20px;
+            background-color: $orange;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,10 @@
-const slider = ()=>{
-  const elem = document.querySelector('.main-carousel');
-  var flkty = new Flickity( elem, {
-    // options
-    cellAlign: 'left',
-    prevNextButtons: false,
-    pageDots: false,
-    contain: true
-  });
-}
-
-slider();
+var swiper = new Swiper('.home-slide', {
+  direction: 'vertical',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 
 //-------------------------------------------
 // aside menu mobile

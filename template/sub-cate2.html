@@ -9,15 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-  <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="stylesheet" href="./css/home.min.css">
+  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="stylesheet" href="/css/category.min.css">
 </head>
 <body>
   <div class="body container">
     <!-- ส่วนหัว -->
     <header>
       <div class="header">
-        <div class="logo"><a href=""><img src="./img/logo/logo.png" alt=""></a></div>
+        <div class="logo"><a href=""><img src="/img/logo/logo.png" alt=""></a></div>
         <nav>
           <ul class="head-menu">
             <li><a href="" class="active">home</a></li>
@@ -62,7 +62,7 @@
                 <div class="twitter"><i class="fab fa-twitter"></i></div>
               </div>
             </div>
-            <img src="./img/slide.jpg" alt="">
+            <img src="/img/slide.jpg" alt="">
           </div>
 
           <div class="swiper-slide">
@@ -83,13 +83,22 @@
                 <div class="twitter"><i class="fab fa-twitter"></i></div>
               </div>
             </div>
-            <img src="./img/slide.jpg" alt="">
+            <img src="/img/slide.jpg" alt="">
           </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
       </div>
     </section>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">สายไฟ</a></li>
+        <li>NYY</li>
+      </ul>
+    </div>
 
     <!-- ส่วนหลัก -->
     <main>
@@ -114,24 +123,21 @@
               <!-- ไอค่อนสำหรับปิดเมนู -->
               <li class="icon-close"><i class="fas fa-angle-double-left" onclick="closeAside_mobile()"></i></li>
             </ul>
-            <figure class="qrcode"><img src="./img/qrcode.jpg" alt=""></figure>
+            <figure class="qrcode"><img src="/img/qrcode.jpg" alt=""></figure>
           </div>
         </div>
-        <div class="content">
+        <div class="content sub-category">
           <div class="title">
-            <span>สินค้าแนะนำ</span>
-            <div class="tag" onclick="open_tag()">
-              <span>Tags</span>
-              <i class="fas fa-tags"></i>
-            </div>
+            <span>NYY Mitsubishi 1 core</span>
           </div>
 
           <div class="grid-box">
             <a href="">
               <div class="box">
-                <figure><img src="./img/test1.jpg" alt=""></figure>
+                <div class="brand"><img src="/img/yazaki.png" alt=""></div>
+                <div class="picture"><img src="/img/white.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
                   <div class="price">
                     <span>฿ 1,800</span>
                   </div>
@@ -141,11 +147,12 @@
 
             <a href="">
               <div class="box">
-                <figure><img src="./img/test2.jpg" alt=""></figure>
+                <div class="brand"><img src="/img/yazaki.png" alt=""></div>
+                <div class="picture"><img src="/img/white.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                  <div class="name"><p>ไฟประดับ 50w 16 ยาซากิ 1 ม้วน</p></div>
                   <div class="price">
-                    <span>฿ 22,000</span>
+                    <span>฿ 800</span>
                   </div>
                 </div>
               </div>
@@ -153,50 +160,13 @@
 
             <a href="">
               <div class="box">
-                <figure><img src="./img/test3.jpg" alt=""></figure>
+                <div class="tag">
+                  <div class="new"><span>สินค้าใหม่</span></div>
+                </div>
+                <div class="brand"><img src="/img/mitsubishi-02.png" alt=""></div>
+                <div class="picture"><img src="/img/red.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="sale">
-                    <span>ลดราคา</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test4.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="new">
-                    <span>สินค้าใหม่</span>
-                  </div>
-                  <div class="sale">
-                    <span>ลดราคา</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test1.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
                   <div class="price">
                     <span>฿ 1,800</span>
                   </div>
@@ -206,11 +176,16 @@
 
             <a href="">
               <div class="box">
-                <figure><img src="./img/test2.jpg" alt=""></figure>
+                <div class="tag">
+                  <div class="discount"><span>ลดราคา</span></div>
+                </div>
+                <div class="brand"><img src="/img/mitsubishi-02.png" alt=""></div>
+                <div class="picture"><img src="/img/red.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span>฿ 22,000</span>
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price discount">
+                    <span>฿ 1,800</span>
+                    <span>฿ 800</span>
                   </div>
                 </div>
               </div>
@@ -218,50 +193,10 @@
 
             <a href="">
               <div class="box">
-                <figure><img src="./img/test3.jpg" alt=""></figure>
+                <div class="brand"><img src="/img/salzer-02.png" alt=""></div>
+                <div class="picture"><img src="/img/yellow.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="sale">
-                    <span>ลดราคา</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test4.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="new">
-                    <span>สินค้าใหม่</span>
-                  </div>
-                  <div class="sale">
-                    <span>ลดราคา</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test1.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร ยาวยิ่งกว่าหลวงปู่เค็ม 8 เมตร</p></div>
                   <div class="price">
                     <span>฿ 1,800</span>
                   </div>
@@ -271,62 +206,10 @@
 
             <a href="">
               <div class="box">
-                <figure><img src="./img/test2.jpg" alt=""></figure>
+                <div class="brand"><img src="/img/salzer-02.png" alt=""></div>
+                <div class="picture"><img src="/img/yellow.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span>฿ 22,000</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test3.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="sale">
-                    <span>ลดราคา</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test4.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="new">
-                    <span>สินค้าใหม่</span>
-                  </div>
-                  <div class="sale">
-                    <span>ลดราคา</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test1.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
                   <div class="price">
                     <span>฿ 1,800</span>
                   </div>
@@ -336,11 +219,12 @@
 
             <a href="">
               <div class="box">
-                <figure><img src="./img/test2.jpg" alt=""></figure>
+                <div class="brand"><img src="/img/3M-02.png" alt=""></div>
+                <div class="picture"><img src="/img/blue.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
                   <div class="price">
-                    <span>฿ 22,000</span>
+                    <span>฿ 1,800</span>
                   </div>
                 </div>
               </div>
@@ -348,72 +232,143 @@
 
             <a href="">
               <div class="box">
-                <figure><img src="./img/test3.jpg" alt=""></figure>
+                <div class="tag">
+                  <div class="new"><span>สินค้าใหม่</span></div>
+                  <div class="discount"><span>ลดราคา</span></div>
+                </div>
+                <div class="brand"><img src="/img/3M-02.png" alt=""></div>
+                <div class="picture"><img src="/img/blue.png" alt=""></div>
                 <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="sale">
-                    <span>ลดราคา</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="">
-              <div class="box">
-                <figure><img src="./img/test4.jpg" alt=""></figure>
-                <div class="detail">
-                  <div class="name"><p>ไฟประดับ  50w 16 หลอด ยาว10 เมตร</p></div>
-                  <div class="price">
-                    <span class="discount">฿ 1,800</span>
-                    <span>฿ 1,000</span>
-                  </div>
-                </div>
-                <!-- เมื่อมีการลดราคา จะมี element นี้ -->
-                <div class="tag-zone">
-                  <div class="new">
-                    <span>สินค้าใหม่</span>
-                  </div>
-                  <div class="sale">
-                    <span>ลดราคา</span>
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price discount">
+                    <span>฿ 1,800</span>
+                    <span>฿ 1,100</span>
                   </div>
                 </div>
               </div>
             </a>
           </div>
 
-          <div class="filter-tag">
-            <div class="box-filter">
-              <div class="head">
-                <i class="fas fa-times" onclick="close_filter()"></i>
-                <span>TAGS</span>
-                <span class="reset" onclick="reset_tag()">RESET</span>
-              </div>
-              <div class="body-tag">
-                <div class="select-tag">
-                  <h4>Include Tags</h4>
-                  <label>Find product that has all selected tags below</label>
-                  <ul class="tag">
-                    <li><button class="active" onclick="select_tag(this)">สินค้าใหม่</button></li>
-                    <li><button class="active" onclick="select_tag(this)">ลดราคา</button></li>
-                    <li><button onclick="select_tag(this)">หน้ากาก</button></li>
-                    <li><button onclick="select_tag(this)">เครื่องมือช่าง</button></li>
-                    <li><button onclick="select_tag(this)">อุปกรณ์ป้องกันร่างกาย</button></li>
-                    <li><button onclick="select_tag(this)">อุปกรณ์ส่องสว่าง</button></li>
-                  </ul>
-                </div>
-                <div class="footer">
-                  <span onclick="close_filter()">ยกเลิก</span>
-                  <span class="apply">ใช้งาน</span>
+          <div class="title">
+            <span>NYY Toyota 1 cores</span>
+          </div>
+
+          <div class="grid-box">
+            <a href="">
+              <div class="box">
+                <div class="brand"><img src="/img/yazaki.png" alt=""></div>
+                <div class="picture"><img src="/img/white.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price">
+                    <span>฿ 1,800</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
+
+            <a href="">
+              <div class="box">
+                <div class="brand"><img src="/img/yazaki.png" alt=""></div>
+                <div class="picture"><img src="/img/white.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 ยาซากิ 1 ม้วน</p></div>
+                  <div class="price">
+                    <span>฿ 800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="box">
+                <div class="tag">
+                  <div class="new"><span>สินค้าใหม่</span></div>
+                </div>
+                <div class="brand"><img src="/img/mitsubishi-02.png" alt=""></div>
+                <div class="picture"><img src="/img/red.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price">
+                    <span>฿ 1,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="box">
+                <div class="tag">
+                  <div class="discount"><span>ลดราคา</span></div>
+                </div>
+                <div class="brand"><img src="/img/mitsubishi-02.png" alt=""></div>
+                <div class="picture"><img src="/img/red.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price discount">
+                    <span>฿ 1,800</span>
+                    <span>฿ 800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="box">
+                <div class="brand"><img src="/img/salzer-02.png" alt=""></div>
+                <div class="picture"><img src="/img/yellow.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร ยาวยิ่งกว่าหลวงปู่เค็ม 8 เมตร</p></div>
+                  <div class="price">
+                    <span>฿ 1,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="box">
+                <div class="brand"><img src="/img/salzer-02.png" alt=""></div>
+                <div class="picture"><img src="/img/yellow.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price">
+                    <span>฿ 1,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="box">
+                <div class="brand"><img src="/img/3M-02.png" alt=""></div>
+                <div class="picture"><img src="/img/blue.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price">
+                    <span>฿ 1,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="box">
+                <div class="tag">
+                  <div class="new"><span>สินค้าใหม่</span></div>
+                  <div class="discount"><span>ลดราคา</span></div>
+                </div>
+                <div class="brand"><img src="/img/3M-02.png" alt=""></div>
+                <div class="picture"><img src="/img/blue.png" alt=""></div>
+                <div class="detail">
+                  <div class="name"><p>ไฟประดับ 50w 16 หลอด ยาว 10 เมตร</p></div>
+                  <div class="price discount">
+                    <span>฿ 1,800</span>
+                    <span>฿ 1,100</span>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -425,18 +380,18 @@
           <div class="title">ยี่ห้อผลิตภัณฑ์ต่างๆ</div>
           <div class="list-brand">
             <ul class="list-brand-item">
-              <li class=""><img src="./img/brand/3M-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/ABB-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/hitachi-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/idec-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/mitsubishi-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/panasonic-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/salzer-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/3M-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/ABB-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/hitachi-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/idec-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/mitsubishi-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/panasonic-02.png" alt=""></li>
+              <li class=""><img src="/img/brand/salzer-02.png" alt=""></li>
             </ul>
             <div class="prev"><i class="fas fa-angle-left"></i></div>
             <div class="next"><i class="fas fa-angle-right"></i></div>
           </div>
-          <img src="./img/brand.jpg" alt="" class="bg-brand">
+          <img src="/img/brand.jpg" alt="" class="bg-brand">
         </div>
 
         <div class="content-footer">
@@ -451,7 +406,7 @@
           </div>
 
           <div class="logo-social">
-            <div class="logo"><img src="./img/logo/logo.png" alt=""></div>
+            <div class="logo"><img src="/img/logo/logo.png" alt=""></div>
             <div class="social">
               <figure><i class="fab fa-facebook-f"></i></figure>
               <figure><i class="fab fa-line"></i></figure>
@@ -482,6 +437,6 @@
   </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./js/home.js"></script>
+  <script src="/js/home.js"></script>
 </body>
 </html>
