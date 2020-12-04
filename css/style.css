@@ -612,6 +612,7 @@ footer .footer .brand .list-brand .prev, footer .footer .brand .list-brand .next
 footer .footer .brand .list-brand .prev i, footer .footer .brand .list-brand .next i {
   color: #fff;
   font-size: 1.4em;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

@@ -60,3 +60,28 @@ const select_tag = (that)=>{
 //-------------------------------------------
 // slide footer
 //-------------------------------------------
+
+function DragImg(){
+  let slideLeft = document.querySelector('.list-brand .prev i')
+  let slideright = document.querySelector('.list-brand .next i')
+
+  const Slide = document.querySelector('.list-brand-item')
+
+  let scrollLeft = Slide.scrollLeft;
+
+  slideLeft.addEventListener('click',(e)=>{
+    e.preventDefault();
+    const x = e.pageX - Slide.offsetLeft;
+    const walk = (x - 10) * 3; //scroll-fast
+    Slide.scrollLeft = scrollLeft - walk;
+  })
+
+  slideright.addEventListener('click',(e)=>{
+    e.preventDefault();
+    const x = e.pageX - Slide.offsetLeft;
+    const walk = (x - 10) * 3; //scroll-fast
+    Slide.scrollLeft = scrollLeft + walk;
+  })
+}
+
+DragImg()
