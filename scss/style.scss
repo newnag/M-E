@@ -309,7 +309,6 @@ header{
   }
 
   .aside{
-
     display: flex;
 
     .icon{
@@ -394,7 +393,13 @@ header{
       .qrcode{
         text-align: center;
         margin-top: 1rem;
-        
+        border: 2px solid #00c300;
+        padding: .5em;
+
+        h3{
+          color: #00c300;
+          margin-bottom: .5em;
+        }
       }
 
       &.show{

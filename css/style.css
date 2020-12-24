@@ -498,6 +498,13 @@ header .search-box.show {
 .main-content .aside .aside-menu .qrcode {
   text-align: center;
   margin-top: 1rem;
+  border: 2px solid #00c300;
+  padding: .5em;
+}
+
+.main-content .aside .aside-menu .qrcode h3 {
+  color: #00c300;
+  margin-bottom: .5em;
 }
 
 .main-content .aside .aside-menu.show {

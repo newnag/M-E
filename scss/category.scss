@@ -111,81 +111,53 @@
     }
   }
 
-  .grid-box{
+  .table{
+    margin: 1em 0;
 
-    .box{
-      position: relative;
+    &:hover{
+      box-shadow: 3px 4px 7px $gray;
+      transition: .2s;
+    }
 
-      .brand{
-        position: absolute;
-        top: 3px;
-        right: 0;
+    .head-table{
+      display: grid;
+      grid-template-columns: 100%;
+      border: 1px solid $gray;
+      padding: 5px;
+      background: #424242;
+      color: $white;
+    }
+    .body-table{
+      display: grid;
+      grid-template-columns: 20% 80%;
+      border: 1px solid $gray;
 
-        img{
-          width: 70px;
-          height: 15px;
-        }
+      .left{
+        border-right: 1px solid $gray;
+        display: flex;
+        align-items: center;
+        padding: 10px;
       }
+      .right{
+        display: grid;
+        grid-template-columns: 100%;
+        
+        .row{
+          border-bottom: 1px solid $gray;
+          padding: .25em .5em;
+          display: flex;
+          justify-content: space-between;
 
-      .tag{
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        .new{
-          background: $yellow;
-          padding: 2px;
-          text-align: center;
-          margin-bottom: 3px;
-
-          span{
+          @media screen and (max-width:($tablet)-1px){
             font-size: .8em;
-            color: $black;
           }
-        }
-        .discount{
-          background: $orange;
-          padding: 2px;
-          text-align: center;
-          margin-bottom: 3px;
 
           span{
-            font-size: .8em;
-            color: $white;
-          }
-        }
-      }
-
-      .picture{
-        padding-top: 2em;
-      }
-
-      .detail{
-        .name{
-          p{
-            max-height: 3.2em;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-          }
-        }
-
-        .price{
-          span{
-            color: $orange;
+            color: $gray;
           }
 
-          &.discount{
-            span:first-child{
-              color: $gray;
-              text-decoration: line-through;
-              font-size: .7em;
-            }
-            span:last-child{
-              color: $orange;
-              margin-left: 10px;
-            }
+          &:last-child{
+            border-bottom: unset;
           }
         }
       }
