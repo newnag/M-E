@@ -163,6 +163,64 @@
       }
     }
   }
+
+  .grid-box{
+    .box{
+      .brand{
+        position: absolute;
+        right: 0%;
+        top: 0;
+        background-color: $white;
+
+        img{
+          width: 50px;
+        }
+      }
+
+      .tag{
+        position: absolute;
+        top: 0;
+        left: 0;
+  
+        .sale{
+          background-color: #fd0606;
+          margin-bottom: 3px;
+          line-height: 1.1;
+          width: 60px;
+          padding: 0 .25rem;
+          text-align: center;
+    
+          span{
+            font-size: .8em;
+            color: $white;
+          }
+        }
+        .new{
+          background-color: $yellow;
+          margin-bottom: 3px;
+          line-height: 1.1;
+          width: 60px;
+          padding: 0 .25rem;
+          text-align: center;
+  
+          span{
+            font-size: .8em;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .picture{
+        display: flex;
+        
+        img{
+          height: 165px;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
 }
 
 .brand{

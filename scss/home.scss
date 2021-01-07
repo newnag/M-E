@@ -17,26 +17,74 @@
             transition: .3s;
           }
         }
-      }
-      figure{
-        display: flex;
-      }
+
+        >.tag{
+          position: absolute;
+          top: 0;
+          left: 0;
   
-      .detail{
-        .name{
-          @media screen and (min-width:$ipadpro){
-            padding: .25rem .5rem;
+          .new{
+            background: $yellow;
+            padding: 2px;
+            text-align: center;
+            margin-bottom: 3px;
+  
+            span{
+              font-size: .8em;
+              color: $black;
+            }
           }
+          .discount{
+            background: $orange;
+            padding: 2px;
+            text-align: center;
+            margin-bottom: 3px;
   
-          p{
-            overflow: hidden;
-            height: 3.3em;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
+            span{
+              font-size: .8em;
+              color: $white;
+            }
+          }
+        }
+
+        figure{
+          display: flex;
+  
+          img{
+            height: 165px;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+  
+        .brand{
+          position: absolute;
+          right: 0%;
+          top: 0;
+          background-color: $white;
+  
+          img{
+            width: 50px;
+          }
+        }
+    
+        .detail{
+          .name{
+            @media screen and (min-width:$ipadpro){
+              padding: .25rem .5rem;
+            }
+    
+            p{
+              overflow: hidden;
+              height: 3.3em;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+            }
           }
         }
       }
+      
     }
 
     .filter-tag{

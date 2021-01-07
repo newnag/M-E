@@ -198,6 +198,64 @@
   border-bottom: unset;
 }
 
+.sub-category .grid-box .box .brand, .brand .grid-box .box .brand {
+  position: absolute;
+  right: 0%;
+  top: 0;
+  background-color: #fff;
+}
+
+.sub-category .grid-box .box .brand img, .brand .grid-box .box .brand img {
+  width: 50px;
+}
+
+.sub-category .grid-box .box .tag, .brand .grid-box .box .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sub-category .grid-box .box .tag .sale, .brand .grid-box .box .tag .sale {
+  background-color: #fd0606;
+  margin-bottom: 3px;
+  line-height: 1.1;
+  width: 60px;
+  padding: 0 .25rem;
+  text-align: center;
+}
+
+.sub-category .grid-box .box .tag .sale span, .brand .grid-box .box .tag .sale span {
+  font-size: .8em;
+  color: #fff;
+}
+
+.sub-category .grid-box .box .tag .new, .brand .grid-box .box .tag .new {
+  background-color: #FFD500;
+  margin-bottom: 3px;
+  line-height: 1.1;
+  width: 60px;
+  padding: 0 .25rem;
+  text-align: center;
+}
+
+.sub-category .grid-box .box .tag .new span, .brand .grid-box .box .tag .new span {
+  font-size: .8em;
+  font-weight: 600;
+}
+
+.sub-category .grid-box .box .picture, .brand .grid-box .box .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sub-category .grid-box .box .picture img, .brand .grid-box .box .picture img {
+  height: 165px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .brand .head-bg {
   margin-bottom: .5em;
 }

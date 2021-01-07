@@ -26,16 +26,27 @@
           font-size: 1.3em;
         }
       }
-      .buy-button{
+      .buy-button,.manual-btn{
+        display: inline-block;
+        a{
+          background: $black;
+          color: $white;
+          width: 120px;
+          padding: 5px;
+          border-radius: 5px;
+        }
         button{
           background: $black;
           color: $white;
           width: 120px;
         }
       }
+
+
     }
   
     .picture-zone{
+      margin-top: .5em;
       @media screen and (min-width:$laptop){
         grid-area: pic;
       }
