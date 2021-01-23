@@ -435,7 +435,11 @@ footer{
         width: 100%;
         text-align: center;
         color: $white;
-        font-size: .8em;
+        font-size: .9em;
+
+        @media screen and (min-width:$tablet){
+          font-size: 1.2em;
+        }
       }
 
       .list-brand{
@@ -448,6 +452,12 @@ footer{
 
         @media screen and (min-width:$tablet){
           top: 30%;
+        }
+
+        img{
+          @media screen and (max-width:($tablet)-1px){
+            height: 80px;
+          }
         }
 
         .list-brand-item{
@@ -471,10 +481,11 @@ footer{
 
             img{
               max-width: unset;
-              height: 20px;
+              height: 28px;
+              filter: brightness(0) invert(1);
 
               @media screen and (min-width:$tablet){
-                height: 100%;
+                height: 32px;
               }
             }
           }
@@ -523,7 +534,8 @@ footer{
 
       .contact{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 47% 47%;
+        grid-column-gap: 6%;
         width: 70%;
         margin-bottom: 1em;
 
@@ -534,7 +546,7 @@ footer{
           width: 26%;
         }
         @media screen and (min-width:$laptop){
-          width: 20%;
+          width: 22%;
         }
 
         .address,.mail-tel{
@@ -545,7 +557,23 @@ footer{
       }
 
       .logo-social{
+        width: 80%;
         margin-bottom: 1em;
+
+        @media screen and (min-width:$tablet){
+          width: 35%;
+        }
+        @media screen and (min-width:$ipadpro){
+          width: 30%;
+        }
+        @media screen and (min-width:$laptop){
+          width: 22%;
+        }
+
+        .logo{
+          text-align: center;
+        }
+
         .social{
           display: flex;
           justify-content: space-between;
@@ -559,6 +587,7 @@ footer{
       }
 
       .send-email{
+        display: none;
         .input-box{
           .button-footer{
             background-color: $black;
@@ -618,25 +647,59 @@ footer{
       width: 40%;
 
       @media screen and (max-width:($tablet)-1px){
-        display: none;
+        width: 90%;
       }
       @media screen and (min-width:$tablet){
         text-align: left;
-        width: 80%;
+        width: 49%;
       }
       @media screen and (min-width:$ipadpro) and (max-width:($laptop)-1px){
-        width: 60%;
-        left: 15%;
+        width: 45%;
+      }
+      @media screen and (min-width:$laptop){
+        width: 45%;
       }
 
+      h2:nth-child(1){
+        @media screen and (max-width:($tablet)-1px){
+          font-size: 1.3em;
+          height: 1.5em;
+          overflow: hidden;
+          word-break: break-all;
+        }
+        @media screen and (min-width:$tablet) and (max-width:($laptop)-1px){
+          font-size: 1.1em;
+        }
+      }
+      h2:nth-child(2){
+        font-size: 1em;
+
+        @media screen and (max-width:($tablet)-1px){
+          display: none;
+        }
+        @media screen and (min-width:$tablet) and (max-width:($laptop)-1px){
+          font-size: .9em;
+        }
+      }
       h2,p{
         color: $white;
       }
       p{
         margin: 1em 0;
+
+        @media screen and (max-width:($tablet)-1px){
+          display: none;
+        }
+        @media screen and (min-width:$tablet) and (max-width:($laptop)-1px){
+          font-size: .8em;
+        }
       }
 
       .button{
+        @media screen and (max-width:($tablet)-1px){
+          margin: .5em 0;
+        }
+
         button{
           background-color: inherit;
           border: 1px solid $white;
@@ -657,8 +720,16 @@ footer{
         display: flex;
         margin-top: 2em;
 
+        @media screen and (max-width:($tablet)-1px){
+          margin-top: 1em;
+        }
+
         .face,.line,.twitter{
           margin-right: 2em;
+
+          @media screen and (max-width:($tablet)-1px){
+            font-size: .8em;
+          }
 
           i{
             color: $white;
@@ -670,6 +741,12 @@ footer{
     }
     img{
       width: 100%;
+    }
+  }
+
+  .swiper-pagination{
+    .swiper-pagination-bullet{
+      background-color: $white;
     }
   }
 }
@@ -706,7 +783,7 @@ footer{
 
     li{
       margin-right: 10px;
-      font-size: .8em;
+      font-size: .7em;
     }
 
     li+li:before {

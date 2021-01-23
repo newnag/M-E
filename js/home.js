@@ -33,6 +33,14 @@ const searchbox = ()=>{
   document.querySelector('#inputSearch').value = ""
 }
 
+
+document.querySelector('#inputSearch').addEventListener('keyup', function(e){
+  let key = e.keyCode;
+  let search = this.value;
+  if(key == 13){
+    location.href = location.origin+"/?search="+search;
+  }
+});
 //-------------------------------------------
 // tag filter
 //-------------------------------------------
@@ -70,18 +78,60 @@ function DragImg(){
   let scrollLeft = Slide.scrollLeft;
 
   slideLeft.addEventListener('click',(e)=>{
-    e.preventDefault();
-    const x = e.pageX - Slide.offsetLeft;
-    const walk = (x - 10) * 3; //scroll-fast
-    Slide.scrollLeft = scrollLeft - walk;
+    Slide.scrollLeft -= 150;
   })
 
   slideright.addEventListener('click',(e)=>{
-    e.preventDefault();
-    const x = e.pageX - Slide.offsetLeft;
-    const walk = (x - 10) * 3; //scroll-fast
-    Slide.scrollLeft = scrollLeft + walk;
+    Slide.scrollLeft += 150;
   })
 }
 
 DragImg()
+let applyBTN = document.querySelector(".box-filter .apply");
+if(applyBTN != null){
+  applyBTN.addEventListener("click",function(){
+    let param = document.querySelectorAll(".box-filter li button.active");
+    let search = "";
+    if(param.length > 0){ 
+      param.forEach(function(_this){ 
+          if(_this.value!=""){
+            search += (search =="")? "?tag=":"+";
+            search += _this.value
+          }
+      });
+      location.href = location.origin+"/"+search;
+    }
+  });
+  
+  
+}
+
+function DragBrand(){
+  const slider = document.querySelector('.brand .list-brand .list-brand-item');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('drag');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+  });
+  slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('drag');
+  });
+  slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('drag');
+  });
+  slider.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+  });
+}
+DragBrand()

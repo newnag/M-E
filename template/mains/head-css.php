@@ -18,8 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-  <link rel="stylesheet" href="<?=ROOT_URL?>css/style.min.css?v=1.<?=date('Ymds')?>">
-  <link rel="stylesheet" href="<?=ROOT_URL?>css/home.min.css?v=1.<?=date('Ymds')?>">
+  <link rel="stylesheet" href="<?=ROOT_URL?>css/style.min.css?v=11.<?=date('Ymdis')?>">
+  <link rel="stylesheet" href="<?=ROOT_URL?>css/home.min.css?v=11.<?=date('Ymdis')?>">
  
   <!-- ส่วนของ CSS Page -->
   <?php echo $HEAD['css']; ?>

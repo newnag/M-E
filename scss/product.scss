@@ -53,6 +53,8 @@
       .big-pic{
         img{
           width: 100%;
+          height: 400px;
+          object-fit: contain;
         }
       }
       .thumb-pic{
@@ -95,6 +97,33 @@
       img{
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+
+  >.brand{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 0;
+
+    a{
+      border: 1px solid $gray;
+      margin-right: 1em;
+      margin-bottom: 1em;
+      display: flex;
+      align-items: center;
+
+      .logo{
+        border-radius: 5px;
+        display: flex;
+        padding: 6px;
+        width: 90px;
+  
+        img{
+          width: 100%;
+          min-height: 20px;
+          max-height: 30px;
+        }
       }
     }
   }

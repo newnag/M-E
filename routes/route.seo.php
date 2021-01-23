@@ -45,18 +45,18 @@ if(empty($posts)){
     global $App;
     #ติดตั้ง CSS Requirements
     $App->setHeaderCss([
-      '<link rel="stylesheet" href="'.ROOT_URL.'css/category.min.css?v=1.1.'.date("Ymds").'">'
+      '<link rel="stylesheet" href="'.ROOT_URL.'css/category.min.css?v=3.1.'.date("Ymds").'">'
     ]);
     #ติดตั้ง Script Requirements
     $App->setFooterScript([ 
-      '<script src="'.ROOT_URL.'js/product.js?v=1.1.11'.time().'"></script>'
+      '<script src="'.ROOT_URL.'js/product.js?v=2"></script>'
     ]); 
   });
   Route::get(4,function(){
     global $App;
     #ติดตั้ง CSS Requirements
     $App->setHeaderCss([
-      '<link rel="stylesheet" href="'.ROOT_URL.'css/category.min.css?v=1.1">'
+      '<link rel="stylesheet" href="'.ROOT_URL.'css/category.min.css?v=1.1.'.date("Ymds").'">'
     ]);
     #ติดตั้ง Script Requirements
     // $App->setFooterScript([ 
@@ -67,7 +67,7 @@ if(empty($posts)){
     global $App;
     #ติดตั้ง CSS Requirements
     $App->setHeaderCss([
-      '<link rel="stylesheet" href="'.ROOT_URL.'css/download.min.css?v=1.1">'
+      '<link rel="stylesheet" href="'.ROOT_URL.'css/download.min.css?v=1.1.'.date("Ymds").'">'
     ]);
     #ติดตั้ง Script Requirements
     // $App->setFooterScript([ 
@@ -79,7 +79,7 @@ if(empty($posts)){
     global $App;
     #ติดตั้ง CSS Requirements
     $App->setHeaderCss([
-      '<link rel="stylesheet" href="'.ROOT_URL.'css/about.min.css?v=1.1">'
+      '<link rel="stylesheet" href="'.ROOT_URL.'css/about.min.css?v=1.1.'.date("Ymds").'">'
     ]);
     #ติดตั้ง Script Requirements
     // $App->setFooterScript([ 
@@ -93,9 +93,11 @@ if(empty($posts)){
     $App->setHeaderCss([
       '<link rel="stylesheet" href="'.ROOT_URL.'css/contact.min.css?v=1.1">'
     ]);
+
     #ติดตั้ง Script Requirements
-    // $App->setFooterScript([ 
-    // ]); 
+    $App->setFooterScript([ 
+      '<script src="'.ROOT_URL.'js/contact.js?v=1.1.11'.time().'"></script>'
+    ]); 
   }); 
 
 
@@ -105,10 +107,10 @@ if(empty($posts)){
     #รายละเอียดสินค้า
     #ติดตั้ง CSS Requirements
     $App->setHeaderCss([
-      '<link rel="stylesheet" href="'.ROOT_URL.'css/product.min.css?v=1.1.2">'
+      '<link rel="stylesheet" href="'.ROOT_URL.'css/product.min.css?v=1.1.'.date("ymdis").'">'
     ]);
     #ติดตั้ง Script Requirements
     $App->setFooterScript([ 
-      '<script src="'.ROOT_URL.'js/product.js?v=1.1.11'.time().'"></script>'
+      '<script src="'.ROOT_URL.'js/product.js?v=2"></script>'
     ]); 
 }

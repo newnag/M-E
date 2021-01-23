@@ -4,38 +4,53 @@
           <div class="title">ยี่ห้อผลิตภัณฑ์ต่างๆ</div>
           <div class="list-brand">
             <ul class="list-brand-item">
-              <li class=""><img src="./img/brand/3M-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/ABB-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/hitachi-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/idec-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/mitsubishi-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/panasonic-02.png" alt=""></li>
-              <li class=""><img src="./img/brand/salzer-02.png" alt=""></li>
+              <?php
+                  foreach($BRAND_LIST as $key => $val){
+                    echo ' <a href="'.ROOT_URL.$MAIN_CATE[2]['url']."/".$val['slug'].'"><li class=""><img src="'.ROOT_URL.$val['footer_thumbnail'].'" alt="'.$val['name'].'"></li></a>';
+                  }
+              ?> 
             </ul>
             <div class="prev"><i class="fas fa-angle-left"></i></div>
             <div class="next"><i class="fas fa-angle-right"></i></div>
           </div>
-          <img src="./img/brand.jpg" alt="" class="bg-brand">
+          <img src="<?=ROOT_URL."img/brand.jpg"?>" alt="" class="bg-brand">
         </div>
 
         <div class="content-footer">
           <div class="contact">
             <div class="address">
-              <p>500 terry francois street San Francisco, CA 94158</p> 
+              <p><?= $ADDRESS['address']['info_value']. " " .
+                     $ADDRESS['subdistrict']['info_value']. " " .
+                     $ADDRESS['district']['info_value']. " " .
+                     $ADDRESS['province']['info_value']. " " .
+                     $ADDRESS['zipcode']['info_value'] ?>
+              </p> 
+
             </div>
             <div class="mail-tel">
-              <p>Mail: info@mysite.com</p>
-              <p>Tel: 123-456-7890</p>
+              <a href="mailto:<?=$CONTACT['email_1']['info_value']?>"></a><p>Mail: <?=$CONTACT['email_1']['info_value']?></p></a>
+              <a href="tel:<?=$CONTACT['tel_1']['info_value']?>"></a><p>Tel: <?=$CONTACT['tel_1']['info_value']?></p></a>
             </div>
           </div>
 
           <div class="logo-social">
-            <div class="logo"><img src="./img/logo/logo.png" alt=""></div>
+            <div class="logo"><img src="<?=ROOT_URL?>img/logo/logo.png" alt=""></div>
             <div class="social">
-              <figure><i class="fab fa-facebook-f"></i></figure>
-              <figure><i class="fab fa-line"></i></figure>
-              <figure><i class="fab fa-twitter"></i></figure>
+              <figure> 
+                  <a target="_blank" href="<?=$CONTACT['facebook']['info_link']?>">
+                  <i class="fab fa-facebook-f"></i> Facebook</a> 
+              </figure>
+              <figure> 
+                <a target="_blank" href="<?=$CONTACT['line_1']['info_link']?>">
+                <i class="fab fa-line"></i> Line</a> 
+              </figure>
+              <figure> 
+                <a target="_blank" href="<?=$CONTACT['twitter']['info_link']?>">
+                <i class="fab fa-twitter"></i> Twitter</a> 
+              </figure>
             </div>
+
+            
           </div>
 
           <div class="send-email">

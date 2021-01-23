@@ -2,10 +2,9 @@
 <!-- ส่วนหัว -->
 <header>
       <div class="header">
-        <div class="logo"><a href=""><img src="./img/logo/logo.png" alt=""></a></div>
+        <div class="logo"><a href=""><img src="<?=ROOT_URL?>img/logo/logo.png" alt=""></a></div>
         <nav>
-          <ul class="head-menu">
-          
+          <ul class="head-menu"> 
             <?=$NAV_TOP?>
             <li><i class="fas fa-search" onclick="searchbox()"></i></li>
             <!-- ไอค่อนสำหรับปิดเมนู -->

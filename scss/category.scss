@@ -29,18 +29,22 @@
         position: absolute;
         top: 0;
         right: 15px;
-        width: 30%;
+        width: 50%;
         height: 100%;
         z-index: 1;
         padding: 1em 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-end;
 
         .name{
+          text-align: end;
           h2{
             font-weight: 600;
             font-size: 1.3em;
+            height: 3em;
+            overflow: hidden;
           }
         }
 
@@ -48,7 +52,7 @@
           button{
             background-color: $orange;
             color: $white;
-            width: 60%;
+            width: 100%;
             border: unset;
           }
         }
@@ -91,6 +95,32 @@
       }
     }
   } 
+  
+  >.title{
+    background-color: $black;
+    color: $white;
+    padding: .25rem .5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:($tablet)-1px){
+      flex-direction: column;
+    }
+    
+    span{
+      height: 1.7em;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      width: 50%;
+      align-self: center;
+
+      @media screen and (max-width:($tablet)-1px){
+        width: 100%;
+      }
+    }
+  }
 
   .title-sub{
     display: flex;
@@ -112,7 +142,7 @@
   }
 
   .table{
-    margin: 1em 0;
+    margin-bottom: 1em;
 
     &:hover{
       box-shadow: 3px 4px 7px $gray;
@@ -166,7 +196,25 @@
 
   .grid-box{
     .box{
-      .brand{
+      .group-brand{
+        position: absolute;
+        right: 0%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 40%;
+        height: 30%;
+
+        >.brand{
+          background-color: $white;
+          position: relative;
+          img{
+            width: 50px;
+          }
+        }
+      }
+      >.brand{
         position: absolute;
         right: 0%;
         top: 0;
@@ -226,6 +274,22 @@
 .brand{
   .head-bg{
     margin-bottom: .5em;
+    position: relative;
+
+    >.logo{
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      transform: translateY(-50%);
+
+      img{
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 100px;
+        max-height: 100px;
+        filter: brightness(0) invert(1);
+      }
+    }
 
     img{
       width: 100%;
